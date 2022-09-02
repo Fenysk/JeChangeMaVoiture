@@ -72,6 +72,18 @@ li{
     overflow: hidden;
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+
 .bloc-1 .white-card{
     background-color: rgba(200, 200, 200, 0.7);
     min-width: 300px;
@@ -88,6 +100,10 @@ li{
     line-height: 60px;
     padding: 30px;
     border-radius: 22px 22px 0 0;
+    -webkit-border-radius: 22px 22px 0 0;
+    -moz-border-radius: 22px 22px 0 0;
+    -ms-border-radius: 22px 22px 0 0;
+    -o-border-radius: 22px 22px 0 0;
 }
 
 .bloc-1 .white-card h2{
@@ -98,6 +114,38 @@ li{
 
 .bloc-1 .white-card p{
     font-size: 1em
+}
+
+.slider-photo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate 15s ease-in-out infinite;
+    -webkit-animation: animate 15s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 22px 0;
+    -webkit-border-radius: 0 0 22px 0;
+    -moz-border-radius: 0 0 22px 0;
+    -ms-border-radius: 0 0 22px 0;
+    -o-border-radius: 0 0 22px 0;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-image: url(/medias/buggati.jpg);
+    }
+    25% {
+        background-image: url(/medias/lambo.jpg);
+    }
+    50% {
+        background-image: url(/medias/audi.jpg);
+    }
+    75% {
+        background-image: url(/medias/BMW.jpg);
+    }
 }
 
 .video-container{
@@ -115,8 +163,8 @@ li{
 
 
 
-@media only screen and (max-width : 320px) {
-    nav{
+@media only screen and (max-width : 500px) {
+    .box{
         display: none;
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,10 +24,16 @@
         </nav>
 
         <div class="v-slider-bloc bloc-1">
-            <div class="white-card">
-                <h2 class="texte"><b>Envie d'une nouvelle voiture ?</b></h2>
-                <p class="texte">Je la trouve pour vous aux meilleures conditions livrée directement chez vous !
-                </p>
+            <div class="white-card parent">
+                <div class="div1">
+                    <h2 class="texte"><b>Envie d'une nouvelle voiture ?</b></h2>
+                </div>
+                <div class="div2">
+                    <p class="texte">Je la trouve pour vous aux meilleures conditions livrée directement chez vous !</p>
+                </div>
+                <div class="slider-photo div3">
+
+                </div>
             </div>
             <div class="video-container">
                 <video autoplay playsinline loop muted poster="/medias/banner.png">
@@ -48,20 +54,6 @@
             <h2>Bloc 4</h2>
         </div>
     </div>
-
-    <script>
-        var promise = document.querySelector('video').play();
-
-        if (promise !== undefined) {
-            promise.catch(error => {
-                // Auto-play was prevented
-                // Show a UI element to let the user manually start playback
-            }).then(() => {
-                // Auto-play started
-            });
-        }
-
-    </script>
 
 </body>
 </html>

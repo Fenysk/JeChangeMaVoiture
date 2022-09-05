@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votre prochaine voiture aux meilleures prix | JeChangeMaVoiture.fr</title>
     <link rel="stylesheet" href="style.css" class="style">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
 
     <header>
-        <img src="medias/new_logo_blanc fin.png">
+        <a href="">
+            <img src="medias/new_logo_blanc fin.png">
+        </a>
     </header>
     
     <div class="container-pages">
@@ -36,8 +43,51 @@
         </div>
 
         <!-- BLOC 2 -->
-        <div class="v-slider-bloc">
-            <h2>Bloc 2</h2>
+        <div class="v-slider-bloc bloc-2">
+            <h2 class="title">Ils m'ont fait confiance</h2>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!-- Carte -->
+                        <div class="card swiper-slide">
+                            <div class="image">
+                                <img src="/medias/client 1.jpg" alt="Mini Cooper d'une cliente">
+                            </div>
+                            <div class="text">
+                                <h3 class="model">Mini Cooper</h3>
+                                <div class="price">25 000 €</div>
+                            </div>
+                        </div>
+
+                        <!-- Carte -->
+                        <div class="card swiper-slide">
+                            <div class="image">
+                                <img src="/medias/client 1.jpg" alt="Mini Cooper d'une cliente">
+                            </div>
+                            <div class="text">
+                                <h3 class="model">Véhicule 2</h3>
+                                <div class="price">30 000 €</div>
+                            </div>
+                        </div>
+
+                        <!-- Carte -->
+                        <div class="card swiper-slide">
+                            <div class="image">
+                                <img src="/medias/client 1.jpg" alt="Mini Cooper d'une cliente">
+                            </div>
+                            <div class="text">
+                                <h3 class="model">Twingo</h3>
+                                <div class="price">25 000 000 €</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <video autoplay playsinline loop muted poster="/medias/audi.jpg">
+                    <source src="/medias/porsche video.mp4">
+                </video>
+            </div>
         </div>
 
         <!-- BLOC 3 -->
@@ -65,6 +115,11 @@
             <h2>Bloc 4</h2>
         </div>
     </div>
-
 </body>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 </html>

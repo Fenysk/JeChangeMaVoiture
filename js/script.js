@@ -2,6 +2,7 @@ var swiper = new Swiper(".slide-content", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
+    rewind: true,
     slidesPerView: "auto",
     autoplay: {
         delay: 2500,

@@ -164,6 +164,13 @@ header a img{
     width: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,0.6);
+
+
+
+    display: none;
+
+
+    
 }
 
 .bloc-2 .title{
@@ -347,7 +354,7 @@ header a img{
 /**
  * Smartphone
  */
-@media only screen and (max-width : 700px) {
+@media (orientation: portrait) {
     header{
         height: 70px;
     }
@@ -371,13 +378,13 @@ header a img{
         flex-flow: column;
     }
 
-    .video-container{
+    .bloc-1 .video-container{
         z-index: -1;
         position: absolute;
         bottom: 0;
     }
 
-    .video-container video{
+    .bloc-1 .video-container video{
         height: 50vh;
         object-fit: cover;
         object-position: center;
